@@ -1,0 +1,36 @@
+.header-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+
+
+
+  .image {
+    height: 250px !important;
+    width: 100%;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial SansSerif;
+  padding-top: 50px;
+  cursor: default;
+  transition: transform 0.4s;
+  color: whitesmoke;
+  margin-bottom: 80px;
+}
+
+h1:hover {
+  transform: scale(1.1);
+  color: lightgrey;
+}
+
+ .content {
+   position: absolute;
+   width: 100%;
+ }

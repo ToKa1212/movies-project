@@ -13,21 +13,27 @@ import {
   TranslateModule
 } from '@ngx-translate/core';
 import { CustomMissingHandler } from './shared/translations/missingTranslationsHandler';
+import { NavigationBarComponent } from './shared/components/navigation-bar/navigation-bar.component';
+import {PrivateModule} from './private/private.module';
+import {SharedModule} from './shared/shared.module';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/');
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    PrivateModule,
+    SharedModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
