@@ -1,0 +1,10 @@
+{
+  "Movie": {
+    "name": "Movie",
+    "description": "Description"
+  },
+  "Header": {
+    "customer": "User"
+  }
+}
+
