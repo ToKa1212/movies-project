@@ -11,7 +11,7 @@ export class MoviesService {
       title: 'Guardians of the Galaxy',
       year: '2014',
       rated: 8.1,
-      imgUrl: 'MM/src/assets/img/movies/guardians-img.png',
+      imgUrl: './../assets/img/movies/guardians-img.png',
       releasedDate: new Date(2014, 6, 31),
       runtime: '121 min',
       director: 'James Gunn',
@@ -38,7 +38,7 @@ export class MoviesService {
       title: 'Seven',
       year: '1995',
       rated: 8.6,
-      imgUrl: 'MM/src/assets/img/movies/seven-img.png',
+      imgUrl: './../assets/img/movies/seven-img.png',
       releasedDate: new Date(1996, 0, 5),
       runtime: '127 min',
       director: 'David Fincher',
@@ -65,7 +65,7 @@ export class MoviesService {
       title: 'Fight Club',
       year: '1999',
       rated: 8.8,
-      imgUrl: 'MM/src/assets/img/movies/fightClub-img.png',
+      imgUrl: './../assets/img/movies/fightClub-img.png',
       releasedDate: new Date(2018, 10, 12),
       runtime: '139 min',
       director: 'David Fincher',
@@ -92,7 +92,7 @@ export class MoviesService {
       title: 'Terminator 2: Judgment Day',
       year: '1991',
       rated: 8.5,
-      imgUrl: 'MM/src/assets/img/movies/terminator2-img.png',
+      imgUrl: './../assets/img/movies/terminator2-img.png',
       releasedDate: new Date(1991, 7, 16),
       runtime: '137 min',
       director: ' James Cameron',
@@ -119,7 +119,7 @@ export class MoviesService {
       title: 'Office Space',
       year: '1999',
       rated: 7.7,
-      imgUrl: 'MM/src/assets/img/movies/officeSpace-img.png',
+      imgUrl: './../assets/img/movies/officeSpace-img.png',
       releasedDate: new Date(1999, 1, 19),
       runtime: '89 min',
       director: ' Mike Judge',
@@ -146,7 +146,7 @@ export class MoviesService {
       title: 'Goodfellas',
       year: '1990',
       rated: 8.7,
-      imgUrl: 'MM/src/assets/img/movies/goodfellas-img.png',
+      imgUrl: './../assets/img/movies/goodfellas-img.png',
       releasedDate: new Date(1990, 9, 26),
       runtime: '146 min',
       director: 'Martin Scorsese',
@@ -173,7 +173,7 @@ export class MoviesService {
       title: 'Cloverfield',
       year: '2008',
       rated: 7.0,
-      imgUrl: 'MM/src/assets/img/movies/cloverfield-img.png',
+      imgUrl: './../assets/img/movies/cloverfield-img.png',
       releasedDate: new Date(2008, 1, 1),
       runtime: '85 min',
       director: 'Matt Reeves',
@@ -200,7 +200,7 @@ export class MoviesService {
       title: 'Avatar',
       year: '2009',
       rated: 7.8,
-      imgUrl: 'MM/src/assets/img/movies/avatar-img.png',
+      imgUrl: './../assets/img/movies/avatar-img.png',
       releasedDate: new Date(2009, 11, 17),
       runtime: '162 min',
       director: 'James Cameron',
@@ -227,7 +227,7 @@ export class MoviesService {
       title: 'Alien',
       year: '1979',
       rated: 8.4,
-      imgUrl: 'MM/src/assets/img/movies/alien-img.png',
+      imgUrl: './../assets/img/movies/alien-img.png',
       releasedDate: new Date(1979, 8, 6),
       runtime: '117 min',
       director: 'Ridley Scott',
@@ -254,7 +254,7 @@ export class MoviesService {
       title: 'The Thing',
       year: '1982',
       rated: 8.1,
-      imgUrl: 'MM/src/assets/img/movies/thing-img.png',
+      imgUrl: './../assets/img/movies/thing-img.png',
       releasedDate: new Date(1982, 7, 26),
       runtime: '127 min',
       director: 'John Carpenter',
@@ -277,13 +277,11 @@ export class MoviesService {
           lastName: 'David'
         }]
     },
-
-
     {
       title: 'It',
       year: '2017',
       rated: 7.4,
-      imgUrl: 'MM/src/assets/img/movies/it-img.png',
+      imgUrl: './../assets/img/movies/it-img.png',
       releasedDate: new Date(2017, 8, 8),
       runtime: '135 min',
       director: 'Andy Muschietti',
@@ -311,7 +309,3 @@ export class MoviesService {
     return of (this.movies);
   }
 }
-
-
-
-

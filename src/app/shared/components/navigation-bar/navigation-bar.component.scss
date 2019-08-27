@@ -11,6 +11,8 @@
     text-align: center;
     cursor: pointer;
     transition: transform .5s;
+    color: black;
+    text-decoration: none;
 
     &:hover {
       background: lightgrey;

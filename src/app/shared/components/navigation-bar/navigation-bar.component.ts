@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {NavigationService} from '../../services/navigation/navigation.service';
+import {Component, Input} from '@angular/core';
 import {NavigationItem} from '../../models/navigation/navigationItem';
 
 @Component({
@@ -7,12 +6,7 @@ import {NavigationItem} from '../../models/navigation/navigationItem';
   templateUrl: './navigation-bar.component.html',
   styleUrls: ['./navigation-bar.component.scss']
 })
-export class NavigationBarComponent implements OnInit {
-  navigationData: NavigationItem[];
-
-  constructor(private navigationService: NavigationService) { }
-
-  ngOnInit() {
-    this.navigationData = this.navigationService.getNavigationItem();
-  }
+export class NavigationBarComponent {
+  @Input() navigationData: NavigationItem[];
+  constructor() {}
 }

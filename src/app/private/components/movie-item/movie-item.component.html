@@ -1,0 +1,49 @@
+<div class="movie-container">
+  <img class="image" alt="movieImage" [src]="movie.imgUrl">
+  <div class="movie-content">
+
+    <i (click)="hideContent()"
+       class="material-icons"
+       *ngIf="!isShown">
+      expand_less
+    </i>
+    <i
+      (click)="hideContent()"
+      class="material-icons"
+      *ngIf="isShown">
+      expand_more
+    </i>
+
+    <div class="title-container">
+      <span>Title: </span>
+      <span>{{movie.title}}</span>
+    </div>
+
+    <div class="content" *ngIf="!isShown">
+      <div class="year-container">
+        <span>Year: </span>
+        <span>{{movie.year}}</span>
+      </div>
+      <div class="rated-container">
+        <span>Rated: </span>
+        <span>{{movie.rated}}</span>
+      </div>
+      <div class="release-date-container">
+        <span>Release date: </span>
+        <span>{{movie.releasedDate | date}}</span>
+      </div>
+      <div class="runtime-container">
+        <span>Runtime: </span>
+        <span>{{movie.runtime}}</span>
+      </div>
+      <div class="director-container">
+        <span>Director: </span>
+        <span>{{movie.director}}</span>
+      </div>
+      <div class="genre-container">
+        <span>Genre: </span>
+        <span>{{movie.genre}}</span>
+      </div>
+    </div>
+  </div>
+</div>
