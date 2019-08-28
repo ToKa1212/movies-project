@@ -3,7 +3,7 @@ import {NavigationItem} from '../../models/navigation/navigationItem';
 import {NavigationService} from '../../services/navigation/navigation.service';
 
 @Component({
-  selector: 'MM-header',
+  selector: 'mm-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })

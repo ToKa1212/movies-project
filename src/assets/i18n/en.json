@@ -5,6 +5,9 @@
   },
   "Header": {
     "customer": "User"
+  },
+  "movie": {
+    "title": "Title"
   }
 }
 

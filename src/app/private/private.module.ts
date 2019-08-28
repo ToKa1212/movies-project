@@ -8,6 +8,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {SharedModule} from '../shared/shared.module';
 import { MoviesListComponent } from './components/movies-list/movies-list.component';
 import { MovieItemComponent } from './components/movie-item/movie-item.component';
+import {TranslateModule} from "@ngx-translate/core";
 
 
 const routes: Routes = [];
@@ -23,7 +24,8 @@ const routes: Routes = [];
   ],
   imports: [
     BrowserModule,
-    SharedModule
+    SharedModule,
+    TranslateModule
   ],
   exports: [
     MusicComponent,

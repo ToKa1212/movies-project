@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {
   MissingTranslationHandler,
   TranslateLoader,
@@ -12,6 +12,8 @@ import {
 import { CustomMissingHandler } from './shared/translations/missingTranslationsHandler';
 import {PrivateModule} from './private/private.module';
 import {SharedModule} from './shared/shared.module';
+import { KokoComponent } from './koko/koko.component';
+import { KokorComponent } from './kokor/kokor.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -20,13 +22,16 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    KokoComponent,
+    KokorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PrivateModule,
     SharedModule,
+    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
