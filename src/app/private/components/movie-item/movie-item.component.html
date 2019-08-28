@@ -1,5 +1,7 @@
 <div class="movie-container">
-  <img class="image" alt="movieImage" [src]="movie.imgUrl">
+  <img alt="movieImage"
+       [src]="movie.imgUrl"
+       [ngClass]="{'selectable': isShown}">
   <div class="movie-content">
 
     <i (click)="hideContent()"

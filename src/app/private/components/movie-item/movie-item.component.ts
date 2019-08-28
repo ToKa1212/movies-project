@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {MovieItems} from "../../models/movieItems";
 
 @Component({
   selector: 'movie-item',
@@ -6,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./movie-item.component.scss']
 })
 export class MovieItemComponent implements OnInit {
-  @Input() movie;
+  @Input() movie: MovieItems;
   @Input() isShown: boolean;
 
 
