@@ -1,9 +1,9 @@
 <div class="movie-container">
   <img alt="movieImage"
-       [src]="movie.imgUrl"
+       [src]="movieData.imgUrl"
        [ngClass]="{'selectable': isShown}">
-  <div class="movie-content">
 
+  <div class="movie-content">
     <i (click)="hideContent()"
        class="material-icons"
        *ngIf="!isShown">
@@ -16,35 +16,52 @@
       expand_more
     </i>
 
-    <div class="title-container">
-      <span>{{'movie.title' | translate}}: </span>
-      <span>{{movie.title}}</span>
+
+
+    <div class="content">
+      <div class="title-container">
+        <span>{{'movie.title' | translate}}: </span>
+        <span>{{movieData.title}}</span>
+      </div>
+
+      <div class="show-content" *ngIf="!isShown">
+        <div class="year-container">
+          <span>Year: </span>
+          <span>{{movieData.year}}</span>
+        </div>
+        <div class="rated-container">
+          <span>Rated: </span>
+          <span>{{movieData.rated}}</span>
+        </div>
+        <div class="release-date-container">
+          <span>Release date: </span>
+          <span>{{movieData.releasedDate | date}}</span>
+        </div>
+        <div class="runtime-container">
+          <span>Runtime: </span>
+          <span>{{movieData.runtime}}</span>
+        </div>
+        <div class="director-container">
+          <span>Director: </span>
+          <span>{{movieData.director}}</span>
+        </div>
+        <div class="genre-container">
+          <span>Genre: </span>
+          <span>{{movieData.genre}}</span>
+        </div>
+      </div>
+
     </div>
 
-    <div class="content" *ngIf="!isShown">
-      <div class="year-container">
-        <span>Year: </span>
-        <span>{{movie.year}}</span>
-      </div>
-      <div class="rated-container">
-        <span>Rated: </span>
-        <span>{{movie.rated}}</span>
-      </div>
-      <div class="release-date-container">
-        <span>Release date: </span>
-        <span>{{movie.releasedDate | date}}</span>
-      </div>
-      <div class="runtime-container">
-        <span>Runtime: </span>
-        <span>{{movie.runtime}}</span>
-      </div>
-      <div class="director-container">
-        <span>Director: </span>
-        <span>{{movie.director}}</span>
-      </div>
-      <div class="genre-container">
-        <span>Genre: </span>
-        <span>{{movie.genre}}</span>
+    <div class="actresses-container">
+      <div [ngClass]="{'hide': isShown}">
+        <h3>Actresses: </h3>
+        <div
+          *ngFor="let actress of actresses"
+          class="actress">
+          <span>{{actress.firstName}} </span>
+          <span>{{actress.lastName}} </span>
+        </div>
       </div>
     </div>
   </div>

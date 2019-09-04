@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {MovieItems} from "../../models/movieItems";
+import {MovieItems} from '../../models/movieItems';
 
 @Component({
   selector: 'movie-item',
@@ -7,13 +7,15 @@ import {MovieItems} from "../../models/movieItems";
   styleUrls: ['./movie-item.component.scss']
 })
 export class MovieItemComponent implements OnInit {
-  @Input() movie: MovieItems;
+  @Input('movie') movieData: MovieItems;
   @Input() isShown: boolean;
+  @Input() actresses;
 
-
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    console.log(this.actresses);
   }
 
   hideContent() {
