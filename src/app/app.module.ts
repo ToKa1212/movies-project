@@ -12,9 +12,6 @@ import {
 import { CustomMissingHandler } from './shared/translations/missingTranslationsHandler';
 import {PrivateModule} from './private/private.module';
 import {SharedModule} from './shared/shared.module';
-import { KokoComponent } from './koko/koko.component';
-import { KokorComponent } from './kokor/kokor.component';
-
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -22,9 +19,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent,
-    KokoComponent,
-    KokorComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
