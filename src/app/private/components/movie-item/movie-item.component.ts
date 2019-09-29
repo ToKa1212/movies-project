@@ -15,7 +15,6 @@ export class MovieItemComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.actresses);
   }
 
   hideContent() {

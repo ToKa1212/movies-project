@@ -16,6 +16,7 @@ export class MoviesService {
       runtime: '121 min',
       director: 'James Gunn',
       genre: 'Action',
+      path: '/guardians',
       actresses: [
         {
           firstName: 'Chris',
@@ -43,6 +44,7 @@ export class MoviesService {
       runtime: '127 min',
       director: 'David Fincher',
       genre: 'Thriller',
+      path: '/seven',
       actresses: [
         {
           firstName: 'Morgan',
@@ -70,6 +72,7 @@ export class MoviesService {
       runtime: '139 min',
       director: 'David Fincher',
       genre: 'Drama',
+      path: '/fight-club',
       actresses: [
         {
           firstName: 'Edward',
@@ -97,6 +100,7 @@ export class MoviesService {
       runtime: '137 min',
       director: ' James Cameron',
       genre: 'Action',
+      path: '/terminator',
       actresses: [
         {
           firstName: 'Arnold',
@@ -124,6 +128,7 @@ export class MoviesService {
       runtime: '89 min',
       director: ' Mike Judge',
       genre: 'Comedy',
+      path: '/office-space',
       actresses: [
         {
           firstName: 'Ron',
@@ -151,6 +156,7 @@ export class MoviesService {
       runtime: '146 min',
       director: 'Martin Scorsese',
       genre: 'Drama',
+      path: '/goodfellas',
       actresses: [
         {
           firstName: 'Robert',
@@ -178,6 +184,7 @@ export class MoviesService {
       runtime: '85 min',
       director: 'Matt Reeves',
       genre: 'Horror',
+      path: '/cloverfield',
       actresses: [
         {
           firstName: 'Lizzy',
@@ -205,6 +212,7 @@ export class MoviesService {
       runtime: '162 min',
       director: 'James Cameron',
       genre: 'Drama',
+      path: '/avatar',
       actresses: [
         {
           firstName: 'Sam',
@@ -232,6 +240,7 @@ export class MoviesService {
       runtime: '117 min',
       director: 'Ridley Scott',
       genre: 'Horror',
+      path: '/alien',
       actresses: [
         {
           firstName: 'Tom',
@@ -259,6 +268,7 @@ export class MoviesService {
       runtime: '127 min',
       director: 'John Carpenter',
       genre: 'Horror',
+      path: '/the-thing',
       actresses: [
         {
           firstName: 'Kurt',
@@ -286,6 +296,7 @@ export class MoviesService {
       runtime: '135 min',
       director: 'Andy Muschietti',
       genre: 'Horror',
+      path: '/it',
       actresses: [
         {
           firstName: 'Jaeden',

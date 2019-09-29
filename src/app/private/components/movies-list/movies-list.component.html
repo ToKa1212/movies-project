@@ -1,9 +1,18 @@
-<div *ngFor="let movie of movieData">
+<div class="content-container" *ngFor="let movie of movieData">
   <div class="content">
     <movie-item
       [movie]="movie"
       [isShown]="isShown"
       [actresses]="movie.actresses">
     </movie-item>
+    <div class="detail-button">
+      <button [routerLink]="movie.path"
+              class="mat-button"
+              mat-stroked-button
+              type="button"
+      >To detail!</button>
+      <movie-detail></movie-detail>
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

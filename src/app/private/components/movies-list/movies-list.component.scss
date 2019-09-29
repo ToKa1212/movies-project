@@ -1,3 +1,13 @@
-.content {
-  border-bottom: 1px solid grey;
+.content-container {
+  position: relative;
+
+  .content {
+    border-bottom: 1px solid grey;
+  }
+
+  .detail-button {
+    position: absolute;
+    right: 420px;
+    top: 45px;
+  }
 }
