@@ -12,19 +12,14 @@ import {map} from 'rxjs/operators';
   styleUrls: ['./movie-detail.component.scss']
 })
 export class MovieDetailComponent implements OnInit {
-  movie: MovieItems[];
-  choosenMovie: MovieItems;
+  movie: MovieItems;
 
   constructor(private route: ActivatedRoute) {
   }
 
   ngOnInit() {
-    const movieId = this.route.snapshot.params.id;
-    const {order} = this.route.snapshot.data;
-    if (order) {
-      this.movie = order;
-      this.choosenMovie = this.movie.find(item => item === order[movieId]);
-    }
-    console.log(this.choosenMovie);
+    const {movie} = this.route.snapshot.data;
+    console.log(this.route.snapshot.data);
+    this.movie = movie;
   }
 }

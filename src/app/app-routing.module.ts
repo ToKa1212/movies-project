@@ -29,7 +29,7 @@ const routes: Routes = [
   {
     component: MovieDetailComponent,
     resolve: {
-      order: DetailResolver
+      movie: DetailResolver
     },
     path: 'detail/:id',
   },

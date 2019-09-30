@@ -289,7 +289,7 @@ export class MoviesService {
     },
     {
       title: 'It',
-      id: 10,
+      id: 1,
       year: '2017',
       rated: 7.4,
       imgUrl: './../assets/img/movies/it-img.png',
@@ -316,7 +316,11 @@ export class MoviesService {
         }]
     }];
 
-  getMovie(id?: any): Observable<MovieItems[]> {
+  getMovies(): Observable<MovieItems[]> {
     return of (this.movies);
+  }
+  getMovie(id?: any): Observable<MovieItems> {
+    console.log(id, this.movies);
+    return of (this.movies.find(choosenMovie => String(choosenMovie.id) === id));
   }
 }
