@@ -9,6 +9,7 @@ export class MoviesService {
   private movies: MovieItems[] = [
     {
       title: 'Guardians of the Galaxy',
+      id: 0,
       year: '2014',
       rated: 8.1,
       imgUrl: './../assets/img/movies/guardians-img.png',
@@ -16,7 +17,6 @@ export class MoviesService {
       runtime: '121 min',
       director: 'James Gunn',
       genre: 'Action',
-      path: '/guardians',
       actresses: [
         {
           firstName: 'Chris',
@@ -37,6 +37,7 @@ export class MoviesService {
     },
     {
       title: 'Seven',
+      id: 1,
       year: '1995',
       rated: 8.6,
       imgUrl: './../assets/img/movies/seven-img.png',
@@ -44,7 +45,6 @@ export class MoviesService {
       runtime: '127 min',
       director: 'David Fincher',
       genre: 'Thriller',
-      path: '/seven',
       actresses: [
         {
           firstName: 'Morgan',
@@ -65,6 +65,7 @@ export class MoviesService {
     },
     {
       title: 'Fight Club',
+      id: 2,
       year: '1999',
       rated: 8.8,
       imgUrl: './../assets/img/movies/fightClub-img.png',
@@ -72,7 +73,6 @@ export class MoviesService {
       runtime: '139 min',
       director: 'David Fincher',
       genre: 'Drama',
-      path: '/fight-club',
       actresses: [
         {
           firstName: 'Edward',
@@ -93,6 +93,7 @@ export class MoviesService {
     },
     {
       title: 'Terminator 2: Judgment Day',
+      id: 3,
       year: '1991',
       rated: 8.5,
       imgUrl: './../assets/img/movies/terminator2-img.png',
@@ -100,7 +101,6 @@ export class MoviesService {
       runtime: '137 min',
       director: ' James Cameron',
       genre: 'Action',
-      path: '/terminator',
       actresses: [
         {
           firstName: 'Arnold',
@@ -121,6 +121,7 @@ export class MoviesService {
     },
     {
       title: 'Office Space',
+      id: 4,
       year: '1999',
       rated: 7.7,
       imgUrl: './../assets/img/movies/officeSpace-img.png',
@@ -128,7 +129,6 @@ export class MoviesService {
       runtime: '89 min',
       director: ' Mike Judge',
       genre: 'Comedy',
-      path: '/office-space',
       actresses: [
         {
           firstName: 'Ron',
@@ -149,6 +149,7 @@ export class MoviesService {
     },
     {
       title: 'Goodfellas',
+      id: 5,
       year: '1990',
       rated: 8.7,
       imgUrl: './../assets/img/movies/goodfellas-img.png',
@@ -156,7 +157,6 @@ export class MoviesService {
       runtime: '146 min',
       director: 'Martin Scorsese',
       genre: 'Drama',
-      path: '/goodfellas',
       actresses: [
         {
           firstName: 'Robert',
@@ -177,6 +177,7 @@ export class MoviesService {
     },
     {
       title: 'Cloverfield',
+      id: 6,
       year: '2008',
       rated: 7.0,
       imgUrl: './../assets/img/movies/cloverfield-img.png',
@@ -184,7 +185,6 @@ export class MoviesService {
       runtime: '85 min',
       director: 'Matt Reeves',
       genre: 'Horror',
-      path: '/cloverfield',
       actresses: [
         {
           firstName: 'Lizzy',
@@ -205,6 +205,7 @@ export class MoviesService {
     },
     {
       title: 'Avatar',
+      id: 7,
       year: '2009',
       rated: 7.8,
       imgUrl: './../assets/img/movies/avatar-img.png',
@@ -212,7 +213,6 @@ export class MoviesService {
       runtime: '162 min',
       director: 'James Cameron',
       genre: 'Drama',
-      path: '/avatar',
       actresses: [
         {
           firstName: 'Sam',
@@ -233,6 +233,7 @@ export class MoviesService {
     },
     {
       title: 'Alien',
+      id: 8,
       year: '1979',
       rated: 8.4,
       imgUrl: './../assets/img/movies/alien-img.png',
@@ -240,7 +241,6 @@ export class MoviesService {
       runtime: '117 min',
       director: 'Ridley Scott',
       genre: 'Horror',
-      path: '/alien',
       actresses: [
         {
           firstName: 'Tom',
@@ -261,6 +261,7 @@ export class MoviesService {
     },
     {
       title: 'The Thing',
+      id: 9,
       year: '1982',
       rated: 8.1,
       imgUrl: './../assets/img/movies/thing-img.png',
@@ -268,7 +269,6 @@ export class MoviesService {
       runtime: '127 min',
       director: 'John Carpenter',
       genre: 'Horror',
-      path: '/the-thing',
       actresses: [
         {
           firstName: 'Kurt',
@@ -289,6 +289,7 @@ export class MoviesService {
     },
     {
       title: 'It',
+      id: 10,
       year: '2017',
       rated: 7.4,
       imgUrl: './../assets/img/movies/it-img.png',
@@ -296,7 +297,6 @@ export class MoviesService {
       runtime: '135 min',
       director: 'Andy Muschietti',
       genre: 'Horror',
-      path: '/it',
       actresses: [
         {
           firstName: 'Jaeden',
@@ -316,7 +316,7 @@ export class MoviesService {
         }]
     }];
 
-  getMovie(): Observable<MovieItems[]> {
+  getMovie(id?: any): Observable<MovieItems[]> {
     return of (this.movies);
   }
 }

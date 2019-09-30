@@ -1,3 +1,8 @@
-<p>
-  movie-detail works!
-</p>
+<h2>{{choosenMovie.title}}</h2>
+<div *ngIf="choosenMovie">
+  <p>Year: {{choosenMovie.year}}</p>
+  <p>Rated: {{choosenMovie.rated}}</p>
+  <p>Length: {{choosenMovie.runtime}}</p>
+  <p>Release date: {{choosenMovie.releasedDate | date}}</p>
+</div>
+

@@ -6,13 +6,11 @@
       [actresses]="movie.actresses">
     </movie-item>
     <div class="detail-button">
-      <button [routerLink]="movie.path"
+      <button [routerLink]="['/detail', movie.id]"
               class="mat-button"
               mat-stroked-button
               type="button"
       >To detail!</button>
-      <movie-detail></movie-detail>
-      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

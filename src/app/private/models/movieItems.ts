@@ -10,5 +10,5 @@ export interface MovieItems {
   director: string;
   imgUrl?: any;
   actresses: MovieActresses[];
-  path?: string;
+  id: number;
 }

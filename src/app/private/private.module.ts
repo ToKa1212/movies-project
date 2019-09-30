@@ -11,16 +11,9 @@ import {MovieItemComponent} from './components/movie-item/movie-item.component';
 import {TranslateModule} from '@ngx-translate/core';
 import {MatButtonModule, MatChipsModule} from '@angular/material';
 import {MovieDetailComponent} from './pages/movie-detail/movie-detail.component';
-import {MoviesService} from './services/movies/movies.service';
-import {MovieItems} from './models/movieItems';
+import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
 
 
-const routes: Routes = [
-  {
-    component: MovieDetailComponent,
-    pathMatch: 'guardians' || 'seven' || 'fight-club' || 'terminator' || 'office-space' || 'goodfellas' || 'cloverfield' || 'avatar' || 'alien' || 'the-thing' || 'it',
-  }
-];
 
 @NgModule({
   declarations: [
@@ -31,6 +24,7 @@ const routes: Routes = [
     MoviesListComponent,
     MovieItemComponent,
     MovieDetailComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +38,8 @@ const routes: Routes = [
     MusicComponent,
     MovieComponent,
     PhotosComponent,
-    DocumentsComponent
+    DocumentsComponent,
+    MovieDetailComponent
   ]
 })
 export class PrivateModule {
