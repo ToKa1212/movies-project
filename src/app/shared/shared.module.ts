@@ -5,6 +5,7 @@ import {NavigationBarComponent} from './components/navigation-bar/navigation-bar
 import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -13,14 +14,15 @@ import {FormsModule} from '@angular/forms';
     NavigationBarComponent
   ],
   imports: [
-    BrowserModule,
     RouterModule,
     FormsModule,
+    CommonModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     NavigationBarComponent,
+    CommonModule
   ]
 })
 export class SharedModule {}

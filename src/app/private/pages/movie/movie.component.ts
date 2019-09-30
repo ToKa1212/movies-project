@@ -11,11 +11,13 @@ export class MovieComponent implements OnInit {
   movies: MovieItems[] = [];
 
   constructor(private moviesService: MoviesService) {
+    console.log('consgtructing');
   }
 
   ngOnInit() {
     const moviesObservable = this.moviesService.getMovies();
     moviesObservable.subscribe((movieData: MovieItems[]) => {
+      console.log(movieData);
       this.movies = movieData;
     },
       error => console.log(error));

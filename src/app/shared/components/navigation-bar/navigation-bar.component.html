@@ -1,7 +1,8 @@
 <div class="navigation-container">
   <a class="navigation-options"
      *ngFor="let navigation of navigationData"
-     [routerLink]="navigation.path" routerLinkActive="active">
+     [routerLink]="navigation.path"
+     routerLinkActive="active">
     {{navigation.title}}
   </a>
 </div>

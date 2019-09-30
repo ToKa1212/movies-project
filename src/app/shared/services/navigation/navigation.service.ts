@@ -9,22 +9,22 @@ export class NavigationService {
     {
       title: 'Movies',
       imgSrc: './assets/img/movie.png',
-      path: '/movie'
+      path: 'private/movies'
     },
     {
       title: 'Music',
       imgSrc: './assets/img/music.png',
-      path: '/music'
+      path: 'private/musics'
     },
     {
       title: 'Photos',
       imgSrc: './assets/img/photos.png',
-      path: '/photo'
+      path: 'private/photos'
     },
     {
       title: 'Documents',
       imgSrc: './assets/img/documents.png',
-      path: '/document'
+      path: 'private/documents'
     }];
 
   constructor() {
