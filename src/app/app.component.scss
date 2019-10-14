@@ -1,36 +1,15 @@
+* {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
 .page-skelet {
   min-height: 100%;
   min-width: 100%;
-
-  .content-background {
-    background-color: white;
-
-    .content {
-      min-height: calc(100vh - 30px - 130px);
-      margin: 0 10%;
-      background-color: white;
-      @media (max-width: 765px) {
-        margin: auto;
-      }
-
-      .page {
-        box-sizing: border-box;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-
-        min-height: calc(100vh - 30px - 130px - 50px);
-
-        @media (max-width: 765px) {
-          min-height: calc(100vh - 110px - 30px);
-        }
-      }
-    }
-  }
 }
 
-p{
+p {
   z-index: 2;
   padding-top: 70px;
 }

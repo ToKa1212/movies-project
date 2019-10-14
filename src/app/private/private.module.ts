@@ -13,6 +13,7 @@ import {MovieDetailComponent} from './pages/movie-detail/movie-detail.component'
 import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
 import {DetailResolver} from './guard/detail.resolver';
 import {CommonModule} from '@angular/common';
+import {MatVideoModule} from 'mat-video';
 
 const routes: Routes = [
   {
@@ -64,7 +65,8 @@ const routes: Routes = [
     MatButtonModule,
     MatChipsModule,
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MatVideoModule
   ],
   exports: [
     MusicComponent,

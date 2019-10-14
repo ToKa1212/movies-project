@@ -13,6 +13,8 @@ import { CustomMissingHandler } from './shared/translations/missingTranslationsH
 import {PrivateModule} from './private/private.module';
 import {SharedModule} from './shared/shared.module';
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {AngularFontAwesomeModule} from 'angular-font-awesome';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,7 +29,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     PrivateModule,
     SharedModule,
+    BrowserAnimationsModule,
     HttpClientModule,
+    AngularFontAwesomeModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
