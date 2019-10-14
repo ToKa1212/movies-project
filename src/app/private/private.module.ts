@@ -12,6 +12,7 @@ import {MatButtonModule, MatChipsModule} from '@angular/material';
 import {MovieDetailComponent} from './pages/movie-detail/movie-detail.component';
 import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
 import {DetailResolver} from './guard/detail.resolver';
+import {CommonModule} from '@angular/common';
 
 const routes: Routes = [
   {

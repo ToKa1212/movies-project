@@ -7,7 +7,12 @@
 
   .detail-button {
     position: absolute;
-    right: 420px;
+    right: 0%;
     top: 45px;
+
+    @media (max-width: 1070px) {
+      position: absolute;
+      top: 260px;
+    }
   }
 }
