@@ -63,6 +63,7 @@ const routes: Routes = [
     TranslateModule,
     MatButtonModule,
     MatChipsModule,
+    CommonModule,
     RouterModule.forChild(routes)
   ],
   exports: [

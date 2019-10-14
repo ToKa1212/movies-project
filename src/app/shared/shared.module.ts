@@ -21,8 +21,7 @@ import {MatVideoComponent} from 'mat-video/app/video/video.component';
   exports: [
     HeaderComponent,
     FooterComponent,
-    NavigationBarComponent,
-    CommonModule
+    NavigationBarComponent
   ]
 })
 export class SharedModule {}

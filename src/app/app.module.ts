@@ -13,7 +13,6 @@ import { CustomMissingHandler } from './shared/translations/missingTranslationsH
 import {PrivateModule} from './private/private.module';
 import {SharedModule} from './shared/shared.module';
 import {BrowserModule} from '@angular/platform-browser';
-import {MatVideoModule} from 'mat-video';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -28,7 +27,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     PrivateModule,
     SharedModule,
-    MatVideoModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
