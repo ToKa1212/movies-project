@@ -69,11 +69,6 @@ const routes: Routes = [
     MatVideoModule
   ],
   exports: [
-    MusicComponent,
-    MovieComponent,
-    PhotosComponent,
-    DocumentsComponent,
-    MovieDetailComponent
   ]
 })
 
