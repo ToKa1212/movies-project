@@ -5,15 +5,16 @@ import {MovieComponent} from './pages/movie/movie.component';
 import {PhotosComponent} from './pages/photos/photos.component';
 import {DocumentsComponent} from './pages/documents/documents.component';
 import {SharedModule} from '../shared/shared.module';
-import {MoviesListComponent} from './components/movies-list/movies-list.component';
-import {MovieItemComponent} from './components/movie-item/movie-item.component';
 import {TranslateModule} from '@ngx-translate/core';
 import {MatButtonModule, MatChipsModule} from '@angular/material';
-import {MovieDetailComponent} from './pages/movie-detail/movie-detail.component';
 import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
 import {DetailResolver} from './guard/detail.resolver';
 import {CommonModule} from '@angular/common';
 import {MatVideoModule} from 'mat-video';
+import {MovieDetailComponent} from './pages/movie/components/movie-detail/movie-detail.component';
+import {MoviesListComponent} from './pages/movie/components/movies-list/movies-list.component';
+import {MovieItemComponent} from './pages/movie/components/movie-item/movie-item.component';
+import {MovieSearchComponent} from './pages/movie/components/movie-search/movie-search.component';
 
 const routes: Routes = [
   {
@@ -57,7 +58,8 @@ const routes: Routes = [
     MoviesListComponent,
     MovieItemComponent,
     MovieDetailComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    MovieSearchComponent
   ],
   imports: [
     SharedModule,

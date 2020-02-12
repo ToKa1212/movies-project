@@ -1,11 +1,16 @@
 import {Injectable} from '@angular/core';
 import {MovieItems} from '../../models/movieItems';
 import {Observable, of} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import {environment} from "../../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class MoviesService {
+  constructor(private http: HttpClient) {
+  }
+
   private movies: MovieItems[] = [
     {
       title: 'Guardians of the Galaxy',
@@ -317,10 +322,15 @@ export class MoviesService {
     }];
 
   getMovies(): Observable<MovieItems[]> {
-    return of (this.movies);
+    return of(this.movies);
   }
+
   getMovie(id?: any): Observable<MovieItems> {
     console.log(id, this.movies);
-    return of (this.movies.find(choosenMovie => String(choosenMovie.id) === id));
+    return of(this.movies.find(choosenMovie => String(choosenMovie.id) === id));
+  }
+
+  getMisoHello(): Observable<any> {
+    return this.http.get<any>(environment.apiUrl + '/movies');
   }
 }

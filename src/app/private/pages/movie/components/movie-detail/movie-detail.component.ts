@@ -1,6 +1,6 @@
 import {Component, DoCheck, OnInit} from '@angular/core';
-import {MovieItems} from '../../models/movieItems';
 import {Router, ActivatedRoute, ParamMap} from '@angular/router';
+import {MovieItems} from '../../../../models/movieItems';
 
 
 @Component({

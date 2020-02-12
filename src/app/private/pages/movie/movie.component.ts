@@ -9,15 +9,19 @@ import {MovieItems} from "../../models/movieItems";
 })
 export class MovieComponent implements OnInit {
   movies: MovieItems[] = [];
+  data;
 
   constructor(private moviesService: MoviesService) {
-    console.log('consgtructing');
   }
 
   ngOnInit() {
+    this.moviesService.getMisoHello().subscribe((data) => {
+      if (data) {
+        console.log(this.data, 'pice');
+      }
+    });
     const moviesObservable = this.moviesService.getMovies();
     moviesObservable.subscribe((movieData: MovieItems[]) => {
-      console.log(movieData);
       this.movies = movieData;
     },
       error => console.log(error));
