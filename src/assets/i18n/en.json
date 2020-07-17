@@ -11,6 +11,10 @@
   },
   "search": {
     "placeHolder": "Search ImDb"
+  },
+  "actions": {
+    "expand": "Expand",
+    "collapse": "Collapse"
   }
 }
 

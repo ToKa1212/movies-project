@@ -7,7 +7,7 @@
 
   .detail-button {
     position: absolute;
-    right: 0%;
+    right: 5%;
     top: 45px;
 
     @media (max-width: 1070px) {
@@ -15,4 +15,9 @@
       top: 260px;
     }
   }
+}
+
+button {
+  position: relative;
+  left: 20px;
 }

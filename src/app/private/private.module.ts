@@ -42,11 +42,11 @@ const routes: Routes = [
     component: DocumentsComponent
   },
   {
+    path: 'movies/:id',
     component: MovieDetailComponent,
     resolve: {
       movie: DetailResolver
     },
-    path: 'movies/:id',
   }
 ];
 

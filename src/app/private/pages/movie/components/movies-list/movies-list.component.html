@@ -1,3 +1,4 @@
+<button (click)="hideContent()" [innerHTML]="isShown ? 'Expand all' : 'Collapse all'"></button>
 <div class="content-container" *ngFor="let movie of movieData">
   <div class="content">
     <movie-item

@@ -1,5 +1,6 @@
 import {AfterViewInit, Component, HostListener, OnInit, ViewChild} from '@angular/core';
 import {fromEvent, Subject} from 'rxjs';
+import {MoviesService} from '../../../shared/services/movies/movies.service';
 
 @Component({
   selector: 'photos-page',
@@ -8,7 +9,9 @@ import {fromEvent, Subject} from 'rxjs';
 })
 export class PhotosComponent implements OnInit, AfterViewInit {
 
-  constructor() { }
+  constructor(
+    private movieService: MoviesService
+  ) { }
   // @ViewChild('myButton') clickButton;
   myButton;
   rx = new Subject();
@@ -34,7 +37,8 @@ export class PhotosComponent implements OnInit, AfterViewInit {
 
   clickMe() {
     this.rx.next();
+    this.movieService.getMovie().subscribe(
+      res => console.log(res)
+    );
   }
-
-
 }

@@ -1,7 +1,10 @@
-<div *ngIf="movie">
-  <h2>{{movie?.title}}</h2>
-  <p>Year: {{movie.year}}</p>
-  <p>Rated: {{movie.rated}}</p>
-  <p>Length: {{movie.runtime}}</p>
-  <p>Release date: {{movie.releasedDate | date}}</p>
+<div class="movie-detial-wrapper">
+  <div *ngIf="movie">
+    <h2>{{movie?.title}}</h2>
+    <p>Year: {{movie.year}}</p>
+    <p>Rated: {{movie.rated}}</p>
+    <p>Length: {{movie.runtime}}</p>
+    <p>Release date: {{movie.releasedDate | date}}</p>
+  </div>
 </div>
+
