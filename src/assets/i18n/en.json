@@ -8,6 +8,9 @@
   },
   "movie": {
     "title": "Title"
+  },
+  "search": {
+    "placeHolder": "Search ImDb"
   }
 }
 

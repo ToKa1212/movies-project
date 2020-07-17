@@ -1,3 +1,9 @@
-<p>
-  movie-search works!
-</p>
+<div class="search-wrapper">
+  <mat-form-field class="example-full-width">
+    <mat-label>Imdb search</mat-label>
+    <input matInput
+           [placeholder]="'search.placeHolder' | translate"
+           maxlength="20"
+           [formControl]="searchControl">
+  </mat-form-field>
+</div>

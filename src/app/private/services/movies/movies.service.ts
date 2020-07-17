@@ -333,4 +333,13 @@ export class MoviesService {
   getMisoHello(): Observable<any> {
     return this.http.get<any>(environment.apiUrl + '/movies');
   }
+
+  searchImdbMovie(imdbId): Observable<any> {
+    return this.http.post(
+      `${environment.apiUrl}/findImdb/${imdbId}`,
+      {...imdbId}
+      );
+  }
 }
+
+
