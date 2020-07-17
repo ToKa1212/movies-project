@@ -1,41 +1,4 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-auto-rows: auto;
-  grid-gap: 20px;
-
-
-  .grid-item {
-     height: 30px;
-    position: relative;
-   }
-
-  .grid-item.grid-item-1 {
-    background-color: red;
-    border: 1px solid red;
-    height: auto;
-  }
-
-  .grid-item.grid-item-2 {
-    background-color: blue;
-    border: 1px solid blue;
-    height: auto;
-
-  }
-
-  .grid-item.grid-item-3 {
-    background-color: green;
-    border: 1px solid green;
-    height: auto;
-
-  }
-
-  .grid-item.grid-item-4 {
-    background-color: yellow;
-    border: 1px solid yellow;
-    height: auto;
-
-  }
+button {
+  position: absolute;
+  bottom: 400px;
 }
-
-

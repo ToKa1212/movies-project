@@ -15,6 +15,8 @@ import {MovieDetailComponent} from './pages/movie/components/movie-detail/movie-
 import {MoviesListComponent} from './pages/movie/components/movies-list/movies-list.component';
 import {MovieItemComponent} from './pages/movie/components/movie-item/movie-item.component';
 import {MovieSearchComponent} from './pages/movie/components/movie-search/movie-search.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
 
 const routes: Routes = [
   {
@@ -68,7 +70,9 @@ const routes: Routes = [
     MatChipsModule,
     CommonModule,
     RouterModule.forChild(routes),
-    MatVideoModule
+    MatVideoModule,
+    ReactiveFormsModule,
+    MatInputModule
   ],
   exports: [
   ]
